@@ -1,4 +1,23 @@
-<p>Input</p> <input type="text" name="inputField">
-<button type="button" (click)="onSave()">SAVE</button>
+<!-- Displays the main header for the application -->
 
-<button type="button" (click)="onGet()">GET</button>
+<md-toolbar color="primary">
+  <span>
+    <a routerLink="/" class="home_link">Sandwich Pit Stop</a>
+  </span>
+
+  <!-- This fills the remaining space of the current row -->
+  <span class="header_contents"></span>
+
+  <span>
+    <button md-raised-button routerLink="/order_cancelled" class="cancel_button">
+      CANCEL 
+    </button>
+  </span>
+</md-toolbar>
+
+<!-- Displays each component (page) of the application -->
+<router-outlet></router-outlet>
+
+
+
+

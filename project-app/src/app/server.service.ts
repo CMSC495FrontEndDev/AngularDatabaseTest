@@ -2,6 +2,10 @@ import {Http, Response} from '@angular/http';
 import {Injectable} from '@angular/core';
 import 'rxjs/Rx';
 
+/**
+ * Generated Service that connects to an external server via an Http Request
+ * I included this from my old code in case you need it.
+*/
 @Injectable()
 export class ServerService{
 
